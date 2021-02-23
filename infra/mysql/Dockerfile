@@ -1,8 +1,8 @@
 FROM mysql:8.0
 
-ENV MYSQL_DATABASE=laravel_local \
-  MYSQL_USER=phper \
-  MYSQL_PASSWORD=secret \
+ENV MYSQL_DATABASE=study_app \
+  MYSQL_USER=tanimoto \
+  MYSQL_PASSWORD=kakaka \
   MYSQL_ROOT_PASSWORD=secret \
   TZ=Asia/Tokyo
 
