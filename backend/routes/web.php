@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/', function () {
     return view('index');
 });
+
+Route::resource('top', 'App\Http\Controllers\TopController')->only([
+    'index', 'show'
+]);
