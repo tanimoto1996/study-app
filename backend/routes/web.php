@@ -24,3 +24,6 @@ Route::get('/', function () {
 Route::resource('top', 'App\Http\Controllers\TopController')->only([
     'index', 'show'
 ]);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
