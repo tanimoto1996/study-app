@@ -17,10 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sample', function () {
-    return view('sample');
+Auth::routes();
+
+Route::get('/Top', function () {
+    return view('top');
 });
 
-Auth::routes();
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
