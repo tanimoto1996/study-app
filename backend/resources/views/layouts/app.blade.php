@@ -75,8 +75,8 @@
                 </div>
             </div>
         </nav>
-
         <main>
+            @yield('sideber')
             @yield('content')
         </main>
     </div>

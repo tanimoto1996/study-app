@@ -19,10 +19,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/Top', function () {
-    return view('top');
-});
+// ミドルウェアのコントローラー
+Route::get('/top', [App\Http\Controllers\TopController::class, 'index'])->name('top');
 
+Route::get('/progress', [App\Http\Controllers\ProgressController::class, 'index'])->name('progress');
 
+Route::get('/schedule', [App\Http\Controllers\ScheduleController::class, 'index'])->name('schedule');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

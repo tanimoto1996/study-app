@@ -1,0 +1,25 @@
+.topWrapper {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.topImg {
+  background-image: url(../img/backimg2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 90%;
+  height: 500px;
+}
+
+.topImg .imgText {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+}
+
+.topButtonContainer {
+  position: absolute;
+  top: 380px;
+  left: 340px;
+}
