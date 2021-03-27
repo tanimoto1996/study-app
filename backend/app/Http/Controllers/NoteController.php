@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ProgressController extends Controller
+class NoteController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,6 +23,6 @@ class ProgressController extends Controller
      */
     public function index()
     {
-        return view('Progress');
+        return view('note');
     }
 }

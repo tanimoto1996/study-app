@@ -22,7 +22,7 @@ Auth::routes();
 // ミドルウェアのコントローラー
 Route::get('/top', [App\Http\Controllers\TopController::class, 'index'])->name('top');
 
-Route::get('/progress', [App\Http\Controllers\ProgressController::class, 'index'])->name('progress');
+Route::get('/note', [App\Http\Controllers\NoteController::class, 'index'])->name('note');
 
 Route::get('/schedule', [App\Http\Controllers\ScheduleController::class, 'index'])->name('schedule');
 

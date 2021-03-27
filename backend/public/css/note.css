@@ -1,0 +1,98 @@
+.mainWrap {
+  display: flex;
+}
+
+.noteContent {
+  display: flex;
+  width: 100%;
+}
+
+.formWrap {
+  width: 100%;
+}
+
+.formWrap {
+  width: 45%;
+  display: flex;
+  margin-left: 30px;
+}
+
+.formMemoTitleWrap {
+  margin-top: 18%;
+}
+
+#memoTitle {
+  width: 500px;
+}
+
+#memoText {
+  width: 500px;
+}
+
+.submit {
+  text-align: end;
+}
+
+.submit button {
+  width: 100%;
+}
+
+.noteTable {
+  width: 50%;
+}
+
+tbody .edit {
+  width: 53px;
+}
+
+tbody .delete {
+  width: 55px;
+}
+
+tbody .title {
+  width: 150px;
+  font-size: 12px;
+}
+
+.searchWrap {
+  text-align: -webkit-right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.searchTxet {
+  margin-right: 30px;
+}
+
+/* 検索フォーム */
+.searchContainer {
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid #999;
+  padding: 3px 10px;
+  border-radius: 5px;
+  height: 2.3em;
+  width: 265px;
+  overflow: hidden;
+}
+.searchContainer input[type="text"]{
+  border: none;
+  height: 2.0em;
+}
+.searchContainer input[type="text"]:focus {
+  outline: 0;
+}
+.searchContainer input[type="submit"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  border: none;
+  background: #3879D9;
+  color: #fff;
+  position: absolute;
+  width: 3.5em;
+  height: 3.0em;
+  right:0px;
+  top: -6px;
+  outline : none;
+}
+/* ここまで */
