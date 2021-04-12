@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use ILLuminate\Support\Facades\Auth;
 
 class ScheduleController extends Controller
 {
@@ -23,6 +24,7 @@ class ScheduleController extends Controller
      */
     public function index()
     {
-        return view('schedule');
+        $userId = Auth::id();
+        return view('schedule', compact('userId'));
     }
 }

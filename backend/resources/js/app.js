@@ -20,6 +20,8 @@ window.Vue = require('vue').default;
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('cakendar-component', require('./components/App.vue').default);
+Vue.prototype.$userId = document.querySelector("meta[name='user-id']").getAttribute('content');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -30,3 +32,5 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
+
+

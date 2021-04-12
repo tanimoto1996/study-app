@@ -1,11 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<link href="{{ asset('css/top.css') }}" rel="stylesheet">
+<link href="{{ asset('css/schedule.css') }}" rel="stylesheet">
+<meta name="user-id" content="{{ Auth::user()->id }}">
 <div class="mainWrap">
     @include('sideber')
-    <div class="scheduleContent">
-
-    </div>
+    <cakendar-component></cakendar-component>
 </div>
 @endsection
